@@ -1,9 +1,7 @@
 package com.example.jooqreordlistener
 
 import com.example.jooqrecordlistener.driver.jooqRecordListenerDB.tables.references.ORDERS
-import org.jooq.RecordContext
-import org.jooq.RecordListener
-import org.jooq.Table
+import org.jooq.*
 
 class OrdersRecordListener : RecordListener {
 
@@ -15,5 +13,13 @@ class OrdersRecordListener : RecordListener {
         if (ctx.recordType() == targetTable.recordType()) {
             println("Ordered: ${ctx.record()}")
         }
+    }
+}
+
+class OrdersExecuteListener : ExecuteListener {
+
+    override fun executeEnd(ctx: ExecuteContext) {
+        println(ctx.statement())
+        println(ctx.statementExecutionCount())
     }
 }
