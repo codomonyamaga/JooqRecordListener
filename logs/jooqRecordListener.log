@@ -1419,3 +1419,487 @@ org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique co
 2023-12-10T17:52:02.504+09:00  INFO 50297 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
 2023-12-10T17:52:02.506+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : Started JooqReordListenerApplicationKt in 0.346 seconds (process running for 2298.288)
 2023-12-10T17:52:02.507+09:00  INFO 50297 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-10T17:56:17.249+09:00  INFO 50297 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 19 class path changes (0 additions, 19 deletions, 0 modifications)
+2023-12-10T17:56:17.290+09:00  INFO 50297 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2023-12-10T17:56:17.294+09:00  INFO 50297 --- [Thread-71] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+2023-12-10T17:56:17.523+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : Starting JooqReordListenerApplicationKt using Java 17.0.7 with PID 50297 (/Users/yamagashin/Dev/jooqReordListener/build/classes/kotlin/main started by yamagashin in /Users/yamagashin/Dev/jooqReordListener)
+2023-12-10T17:56:17.523+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : No active profile set, falling back to 1 default profile: "default"
+2023-12-10T17:56:17.727+09:00  INFO 50297 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-10T17:56:17.728+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10T17:56:17.728+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-10T17:56:17.772+09:00  INFO 50297 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10T17:56:17.772+09:00  INFO 50297 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 247 ms
+2023-12-10T17:56:17.786+09:00  WARN 50297 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ordersController': Lookup method resolution failed
+2023-12-10T17:56:17.786+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-10T17:56:17.790+09:00  INFO 50297 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-10T17:56:17.801+09:00 ERROR 50297 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ordersController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:482) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:352) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1295) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1190) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.jooqreordlistener.JooqReordListenerApplicationKt.main(JooqReordListenerApplication.kt:21) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.jooqreordlistener.OrdersController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@727fbe1a]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483) ~[spring-core-6.1.1.jar:6.1.1]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320) ~[spring-core-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:460) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 24 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/example/jooqreordlistener/OrderRepository
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465) ~[spring-core-6.1.1.jar:6.1.1]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.jooqreordlistener.OrderRepository
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 30 common frames omitted
+
+2023-12-10T17:56:23.353+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : Starting JooqReordListenerApplicationKt using Java 17.0.7 with PID 50297 (/Users/yamagashin/Dev/jooqReordListener/build/classes/kotlin/main started by yamagashin in /Users/yamagashin/Dev/jooqReordListener)
+2023-12-10T17:56:23.354+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : No active profile set, falling back to 1 default profile: "default"
+2023-12-10T17:56:23.679+09:00  INFO 50297 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-10T17:56:23.680+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10T17:56:23.680+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-10T17:56:23.839+09:00  INFO 50297 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-12-10T17:56:23.839+09:00  INFO 50297 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 483 ms
+2023-12-10T17:56:23.925+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Starting...
+2023-12-10T17:56:23.974+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-19 - Added connection org.postgresql.jdbc.PgConnection@6370a7aa
+2023-12-10T17:56:23.974+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Start completed.
+2023-12-10T17:56:23.988+09:00  INFO 50297 --- [restartedMain] liquibase.database                       : Set default schema name to public
+2023-12-10T17:56:24.006+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/20231210_create_order_table.sql
+2023-12-10T17:56:24.021+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/CallableSql.class
+2023-12-10T17:56:24.022+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/CallableSql.class/liquibase/sql/CallableSql.class is not a recognized file type
+2023-12-10T17:56:24.022+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/SingleLineComment.class
+2023-12-10T17:56:24.022+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/SingleLineComment.class/liquibase/sql/SingleLineComment.class is not a recognized file type
+2023-12-10T17:56:24.022+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/Sql.class
+2023-12-10T17:56:24.022+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/Sql.class/liquibase/sql/Sql.class is not a recognized file type
+2023-12-10T17:56:24.022+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/SqlConfiguration.class
+2023-12-10T17:56:24.022+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/SqlConfiguration.class/liquibase/sql/SqlConfiguration.class is not a recognized file type
+2023-12-10T17:56:24.022+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/UnparsedSql.class
+2023-12-10T17:56:24.022+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/UnparsedSql.class/liquibase/sql/UnparsedSql.class is not a recognized file type
+2023-12-10T17:56:24.022+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AbstractSqlVisitor$1.class
+2023-12-10T17:56:24.022+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AbstractSqlVisitor$1.class/liquibase/sql/visitor/AbstractSqlVisitor$1.class is not a recognized file type
+2023-12-10T17:56:24.022+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AbstractSqlVisitor.class
+2023-12-10T17:56:24.023+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AbstractSqlVisitor.class/liquibase/sql/visitor/AbstractSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:24.023+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class
+2023-12-10T17:56:24.023+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class/liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class is not a recognized file type
+2023-12-10T17:56:24.023+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AppendSqlVisitor.class
+2023-12-10T17:56:24.023+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AppendSqlVisitor.class/liquibase/sql/visitor/AppendSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:24.023+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/PrependSqlVisitor.class
+2023-12-10T17:56:24.023+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/PrependSqlVisitor.class/liquibase/sql/visitor/PrependSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:24.023+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/RegExpReplaceSqlVisitor.class
+2023-12-10T17:56:24.027+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/RegExpReplaceSqlVisitor.class/liquibase/sql/visitor/RegExpReplaceSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:24.027+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/ReplaceSqlVisitor.class
+2023-12-10T17:56:24.027+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/ReplaceSqlVisitor.class/liquibase/sql/visitor/ReplaceSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:24.027+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/SqlVisitor.class
+2023-12-10T17:56:24.027+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/SqlVisitor.class/liquibase/sql/visitor/SqlVisitor.class is not a recognized file type
+2023-12-10T17:56:24.027+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/SqlVisitorFactory.class
+2023-12-10T17:56:24.027+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/SqlVisitorFactory.class/liquibase/sql/visitor/SqlVisitorFactory.class is not a recognized file type
+2023-12-10T17:56:24.070+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-10T17:56:24.086+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2023-12-10T17:56:24.086+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Run:                          0
+2023-12-10T17:56:24.086+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Previously run:               1
+2023-12-10T17:56:24.086+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Filtered out:                 0
+2023-12-10T17:56:24.086+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : -------------------------------
+2023-12-10T17:56:24.086+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Total change sets:            1
+2023-12-10T17:56:24.086+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Update summary generated
+2023-12-10T17:56:24.098+09:00  INFO 50297 --- [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2023-12-10T17:56:24.099+09:00  INFO 50297 --- [restartedMain] liquibase.command                        : Command execution complete
+2023-12-10T17:56:24.268+09:00  INFO 50297 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-10T17:56:24.342+09:00  INFO 50297 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-12-10T17:56:24.350+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : Started JooqReordListenerApplicationKt in 1.067 seconds (process running for 2560.152)
+2023-12-10T17:56:24.354+09:00  INFO 50297 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   JooqAutoConfiguration.DslContextConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.jooq.DSLContext; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JooqAutoConfiguration.DslContextConfiguration#jooqConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.jooq.Configuration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-12-10T17:56:34.728+09:00  INFO 50297 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 26 class path changes (26 additions, 0 deletions, 0 modifications)
+2023-12-10T17:56:34.747+09:00  INFO 50297 --- [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown initiated...
+2023-12-10T17:56:34.759+09:00  INFO 50297 --- [Thread-75] com.zaxxer.hikari.HikariDataSource       : HikariPool-19 - Shutdown completed.
+2023-12-10T17:56:35.177+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : Starting JooqReordListenerApplicationKt using Java 17.0.7 with PID 50297 (/Users/yamagashin/Dev/jooqReordListener/build/classes/kotlin/main started by yamagashin in /Users/yamagashin/Dev/jooqReordListener)
+2023-12-10T17:56:35.177+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : No active profile set, falling back to 1 default profile: "default"
+2023-12-10T17:56:35.589+09:00  INFO 50297 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-10T17:56:35.589+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10T17:56:35.589+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-10T17:56:35.606+09:00  INFO 50297 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-12-10T17:56:35.606+09:00  INFO 50297 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 428 ms
+2023-12-10T17:56:35.641+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Starting...
+2023-12-10T17:56:35.704+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-20 - Added connection org.postgresql.jdbc.PgConnection@121f432a
+2023-12-10T17:56:35.705+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Start completed.
+2023-12-10T17:56:35.721+09:00  INFO 50297 --- [restartedMain] liquibase.database                       : Set default schema name to public
+2023-12-10T17:56:35.737+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/20231210_create_order_table.sql
+2023-12-10T17:56:35.744+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/CallableSql.class
+2023-12-10T17:56:35.744+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/CallableSql.class/liquibase/sql/CallableSql.class is not a recognized file type
+2023-12-10T17:56:35.744+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/SingleLineComment.class
+2023-12-10T17:56:35.744+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/SingleLineComment.class/liquibase/sql/SingleLineComment.class is not a recognized file type
+2023-12-10T17:56:35.744+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/Sql.class
+2023-12-10T17:56:35.744+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/Sql.class/liquibase/sql/Sql.class is not a recognized file type
+2023-12-10T17:56:35.744+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/SqlConfiguration.class
+2023-12-10T17:56:35.745+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/SqlConfiguration.class/liquibase/sql/SqlConfiguration.class is not a recognized file type
+2023-12-10T17:56:35.745+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/UnparsedSql.class
+2023-12-10T17:56:35.745+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/UnparsedSql.class/liquibase/sql/UnparsedSql.class is not a recognized file type
+2023-12-10T17:56:35.745+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AbstractSqlVisitor$1.class
+2023-12-10T17:56:35.745+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AbstractSqlVisitor$1.class/liquibase/sql/visitor/AbstractSqlVisitor$1.class is not a recognized file type
+2023-12-10T17:56:35.745+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AbstractSqlVisitor.class
+2023-12-10T17:56:35.745+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AbstractSqlVisitor.class/liquibase/sql/visitor/AbstractSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:35.745+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class
+2023-12-10T17:56:35.745+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class/liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class is not a recognized file type
+2023-12-10T17:56:35.745+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AppendSqlVisitor.class
+2023-12-10T17:56:35.745+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AppendSqlVisitor.class/liquibase/sql/visitor/AppendSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:35.745+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/PrependSqlVisitor.class
+2023-12-10T17:56:35.745+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/PrependSqlVisitor.class/liquibase/sql/visitor/PrependSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:35.745+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/RegExpReplaceSqlVisitor.class
+2023-12-10T17:56:35.745+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/RegExpReplaceSqlVisitor.class/liquibase/sql/visitor/RegExpReplaceSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:35.745+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/ReplaceSqlVisitor.class
+2023-12-10T17:56:35.745+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/ReplaceSqlVisitor.class/liquibase/sql/visitor/ReplaceSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:35.745+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/SqlVisitor.class
+2023-12-10T17:56:35.745+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/SqlVisitor.class/liquibase/sql/visitor/SqlVisitor.class is not a recognized file type
+2023-12-10T17:56:35.745+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/SqlVisitorFactory.class
+2023-12-10T17:56:35.745+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/SqlVisitorFactory.class/liquibase/sql/visitor/SqlVisitorFactory.class is not a recognized file type
+2023-12-10T17:56:35.773+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-10T17:56:35.799+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2023-12-10T17:56:35.800+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Run:                          0
+2023-12-10T17:56:35.800+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Previously run:               1
+2023-12-10T17:56:35.800+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Filtered out:                 0
+2023-12-10T17:56:35.800+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : -------------------------------
+2023-12-10T17:56:35.800+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Total change sets:            1
+2023-12-10T17:56:35.800+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Update summary generated
+2023-12-10T17:56:35.811+09:00  INFO 50297 --- [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2023-12-10T17:56:35.812+09:00  INFO 50297 --- [restartedMain] liquibase.command                        : Command execution complete
+2023-12-10T17:56:35.944+09:00  WARN 50297 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'recordListenerProvider' defined in com.example.jooqreordlistener.JooqReordListenerApplication: Failed to instantiate [org.jooq.RecordListenerProvider]: Illegal factory instance for factory method 'recordListenerProvider'; instance: com.example.jooqreordlistener.JooqReordListenerApplication$$SpringCGLIB$$0
+2023-12-10T17:56:35.944+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown initiated...
+2023-12-10T17:56:35.981+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-20 - Shutdown completed.
+2023-12-10T17:56:35.981+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-10T17:56:35.987+09:00  INFO 50297 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-10T17:56:35.988+09:00 ERROR 50297 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'recordListenerProvider' defined in com.example.jooqreordlistener.JooqReordListenerApplication: Failed to instantiate [org.jooq.RecordListenerProvider]: Illegal factory instance for factory method 'recordListenerProvider'; instance: com.example.jooqreordlistener.JooqReordListenerApplication$$SpringCGLIB$$0
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1166) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.jooqreordlistener.JooqReordListenerApplicationKt.main(JooqReordListenerApplication.kt:21) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.jooq.RecordListenerProvider]: Illegal factory instance for factory method 'recordListenerProvider'; instance: com.example.jooqreordlistener.JooqReordListenerApplication$$SpringCGLIB$$0
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:160) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: object is not an instance of declaring class
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 25 common frames omitted
+
+2023-12-10T17:56:37.547+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : Starting JooqReordListenerApplicationKt using Java 17.0.7 with PID 50297 (/Users/yamagashin/Dev/jooqReordListener/build/classes/kotlin/main started by yamagashin in /Users/yamagashin/Dev/jooqReordListener)
+2023-12-10T17:56:37.547+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : No active profile set, falling back to 1 default profile: "default"
+2023-12-10T17:56:37.742+09:00  WARN 50297 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'dslContext' defined in class path resource [org/springframework/boot/autoconfigure/jooq/JooqAutoConfiguration$DslContextConfiguration.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jooq.JooqAutoConfiguration$DslContextConfiguration; factoryMethodName=dslContext; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/boot/autoconfigure/jooq/JooqAutoConfiguration$DslContextConfiguration.class]] for bean 'dslContext' since there is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=jooqConfig; factoryMethodName=dslContext; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/example/jooqreordlistener/JooqConfig.class]] bound.
+2023-12-10T17:56:37.749+09:00  INFO 50297 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-10T17:56:37.753+09:00 ERROR 50297 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'dslContext', defined in class path resource [org/springframework/boot/autoconfigure/jooq/JooqAutoConfiguration$DslContextConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [com/example/jooqreordlistener/JooqConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-12-10T17:56:39.187+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : Starting JooqReordListenerApplicationKt using Java 17.0.7 with PID 50297 (/Users/yamagashin/Dev/jooqReordListener/build/classes/kotlin/main started by yamagashin in /Users/yamagashin/Dev/jooqReordListener)
+2023-12-10T17:56:39.188+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : No active profile set, falling back to 1 default profile: "default"
+2023-12-10T17:56:39.316+09:00  INFO 50297 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-10T17:56:39.317+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10T17:56:39.317+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-10T17:56:39.329+09:00  INFO 50297 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-12-10T17:56:39.329+09:00  INFO 50297 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 140 ms
+2023-12-10T17:56:39.390+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Starting...
+2023-12-10T17:56:39.441+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-21 - Added connection org.postgresql.jdbc.PgConnection@5ff65bb1
+2023-12-10T17:56:39.441+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Start completed.
+2023-12-10T17:56:39.462+09:00  INFO 50297 --- [restartedMain] liquibase.database                       : Set default schema name to public
+2023-12-10T17:56:39.496+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/20231210_create_order_table.sql
+2023-12-10T17:56:39.503+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/CallableSql.class
+2023-12-10T17:56:39.504+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/CallableSql.class/liquibase/sql/CallableSql.class is not a recognized file type
+2023-12-10T17:56:39.504+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/SingleLineComment.class
+2023-12-10T17:56:39.504+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/SingleLineComment.class/liquibase/sql/SingleLineComment.class is not a recognized file type
+2023-12-10T17:56:39.504+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/Sql.class
+2023-12-10T17:56:39.504+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/Sql.class/liquibase/sql/Sql.class is not a recognized file type
+2023-12-10T17:56:39.504+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/SqlConfiguration.class
+2023-12-10T17:56:39.504+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/SqlConfiguration.class/liquibase/sql/SqlConfiguration.class is not a recognized file type
+2023-12-10T17:56:39.504+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/UnparsedSql.class
+2023-12-10T17:56:39.504+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/UnparsedSql.class/liquibase/sql/UnparsedSql.class is not a recognized file type
+2023-12-10T17:56:39.504+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AbstractSqlVisitor$1.class
+2023-12-10T17:56:39.504+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AbstractSqlVisitor$1.class/liquibase/sql/visitor/AbstractSqlVisitor$1.class is not a recognized file type
+2023-12-10T17:56:39.504+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AbstractSqlVisitor.class
+2023-12-10T17:56:39.504+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AbstractSqlVisitor.class/liquibase/sql/visitor/AbstractSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:39.504+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class
+2023-12-10T17:56:39.505+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class/liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class is not a recognized file type
+2023-12-10T17:56:39.505+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AppendSqlVisitor.class
+2023-12-10T17:56:39.505+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AppendSqlVisitor.class/liquibase/sql/visitor/AppendSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:39.505+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/PrependSqlVisitor.class
+2023-12-10T17:56:39.505+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/PrependSqlVisitor.class/liquibase/sql/visitor/PrependSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:39.505+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/RegExpReplaceSqlVisitor.class
+2023-12-10T17:56:39.505+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/RegExpReplaceSqlVisitor.class/liquibase/sql/visitor/RegExpReplaceSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:39.505+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/ReplaceSqlVisitor.class
+2023-12-10T17:56:39.506+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/ReplaceSqlVisitor.class/liquibase/sql/visitor/ReplaceSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:39.506+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/SqlVisitor.class
+2023-12-10T17:56:39.506+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/SqlVisitor.class/liquibase/sql/visitor/SqlVisitor.class is not a recognized file type
+2023-12-10T17:56:39.506+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/SqlVisitorFactory.class
+2023-12-10T17:56:39.506+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/SqlVisitorFactory.class/liquibase/sql/visitor/SqlVisitorFactory.class is not a recognized file type
+2023-12-10T17:56:39.528+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-10T17:56:39.557+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2023-12-10T17:56:39.557+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Run:                          0
+2023-12-10T17:56:39.557+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Previously run:               1
+2023-12-10T17:56:39.557+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Filtered out:                 0
+2023-12-10T17:56:39.557+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : -------------------------------
+2023-12-10T17:56:39.557+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Total change sets:            1
+2023-12-10T17:56:39.557+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Update summary generated
+2023-12-10T17:56:39.574+09:00  INFO 50297 --- [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2023-12-10T17:56:39.576+09:00  INFO 50297 --- [restartedMain] liquibase.command                        : Command execution complete
+2023-12-10T17:56:39.694+09:00  INFO 50297 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-10T17:56:39.739+09:00  INFO 50297 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-12-10T17:56:39.741+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : Started JooqReordListenerApplicationKt in 0.568 seconds (process running for 2575.543)
+2023-12-10T17:56:39.742+09:00  INFO 50297 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-12-10T17:56:48.170+09:00  INFO 50297 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 26 class path changes (26 additions, 0 deletions, 0 modifications)
+2023-12-10T17:56:48.176+09:00  INFO 50297 --- [Thread-82] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown initiated...
+2023-12-10T17:56:48.177+09:00  INFO 50297 --- [Thread-82] com.zaxxer.hikari.HikariDataSource       : HikariPool-21 - Shutdown completed.
+2023-12-10T17:56:48.274+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : Starting JooqReordListenerApplicationKt using Java 17.0.7 with PID 50297 (/Users/yamagashin/Dev/jooqReordListener/build/classes/kotlin/main started by yamagashin in /Users/yamagashin/Dev/jooqReordListener)
+2023-12-10T17:56:48.274+09:00  INFO 50297 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : No active profile set, falling back to 1 default profile: "default"
+2023-12-10T17:56:48.397+09:00  INFO 50297 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-10T17:56:48.398+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10T17:56:48.398+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-10T17:56:48.404+09:00  INFO 50297 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-12-10T17:56:48.404+09:00  INFO 50297 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 129 ms
+2023-12-10T17:56:48.416+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Starting...
+2023-12-10T17:56:48.435+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-22 - Added connection org.postgresql.jdbc.PgConnection@1756fcea
+2023-12-10T17:56:48.435+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Start completed.
+2023-12-10T17:56:48.439+09:00  INFO 50297 --- [restartedMain] liquibase.database                       : Set default schema name to public
+2023-12-10T17:56:48.448+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/20231210_create_order_table.sql
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/CallableSql.class
+2023-12-10T17:56:48.450+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/CallableSql.class/liquibase/sql/CallableSql.class is not a recognized file type
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/SingleLineComment.class
+2023-12-10T17:56:48.450+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/SingleLineComment.class/liquibase/sql/SingleLineComment.class is not a recognized file type
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/Sql.class
+2023-12-10T17:56:48.450+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/Sql.class/liquibase/sql/Sql.class is not a recognized file type
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/SqlConfiguration.class
+2023-12-10T17:56:48.450+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/SqlConfiguration.class/liquibase/sql/SqlConfiguration.class is not a recognized file type
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/UnparsedSql.class
+2023-12-10T17:56:48.450+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/UnparsedSql.class/liquibase/sql/UnparsedSql.class is not a recognized file type
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AbstractSqlVisitor$1.class
+2023-12-10T17:56:48.450+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AbstractSqlVisitor$1.class/liquibase/sql/visitor/AbstractSqlVisitor$1.class is not a recognized file type
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AbstractSqlVisitor.class
+2023-12-10T17:56:48.450+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AbstractSqlVisitor.class/liquibase/sql/visitor/AbstractSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class
+2023-12-10T17:56:48.450+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class/liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class is not a recognized file type
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AppendSqlVisitor.class
+2023-12-10T17:56:48.450+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AppendSqlVisitor.class/liquibase/sql/visitor/AppendSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/PrependSqlVisitor.class
+2023-12-10T17:56:48.450+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/PrependSqlVisitor.class/liquibase/sql/visitor/PrependSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/RegExpReplaceSqlVisitor.class
+2023-12-10T17:56:48.450+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/RegExpReplaceSqlVisitor.class/liquibase/sql/visitor/RegExpReplaceSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:48.450+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/ReplaceSqlVisitor.class
+2023-12-10T17:56:48.451+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/ReplaceSqlVisitor.class/liquibase/sql/visitor/ReplaceSqlVisitor.class is not a recognized file type
+2023-12-10T17:56:48.451+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/SqlVisitor.class
+2023-12-10T17:56:48.451+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/SqlVisitor.class/liquibase/sql/visitor/SqlVisitor.class is not a recognized file type
+2023-12-10T17:56:48.451+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/SqlVisitorFactory.class
+2023-12-10T17:56:48.451+09:00  WARN 50297 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/SqlVisitorFactory.class/liquibase/sql/visitor/SqlVisitorFactory.class is not a recognized file type
+2023-12-10T17:56:48.460+09:00  INFO 50297 --- [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-10T17:56:48.471+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2023-12-10T17:56:48.471+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Run:                          0
+2023-12-10T17:56:48.471+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Previously run:               1
+2023-12-10T17:56:48.472+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Filtered out:                 0
+2023-12-10T17:56:48.472+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : -------------------------------
+2023-12-10T17:56:48.472+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Total change sets:            1
+2023-12-10T17:56:48.472+09:00  INFO 50297 --- [restartedMain] liquibase.util                           : Update summary generated
+2023-12-10T17:56:48.475+09:00  INFO 50297 --- [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2023-12-10T17:56:48.476+09:00  INFO 50297 --- [restartedMain] liquibase.command                        : Command execution complete
+2023-12-10T17:56:48.549+09:00  WARN 50297 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'recordListenerProvider' defined in com.example.jooqreordlistener.JooqReordListenerApplication: Failed to instantiate [org.jooq.RecordListenerProvider]: Illegal factory instance for factory method 'recordListenerProvider'; instance: com.example.jooqreordlistener.JooqReordListenerApplication$$SpringCGLIB$$0
+2023-12-10T17:56:48.549+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown initiated...
+2023-12-10T17:56:48.592+09:00  INFO 50297 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-22 - Shutdown completed.
+2023-12-10T17:56:48.592+09:00  INFO 50297 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-10T17:56:48.596+09:00  INFO 50297 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-10T17:56:48.597+09:00 ERROR 50297 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'recordListenerProvider' defined in com.example.jooqreordlistener.JooqReordListenerApplication: Failed to instantiate [org.jooq.RecordListenerProvider]: Illegal factory instance for factory method 'recordListenerProvider'; instance: com.example.jooqreordlistener.JooqReordListenerApplication$$SpringCGLIB$$0
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1166) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.example.jooqreordlistener.JooqReordListenerApplicationKt.main(JooqReordListenerApplication.kt:21) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.0.jar:3.2.0]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.jooq.RecordListenerProvider]: Illegal factory instance for factory method 'recordListenerProvider'; instance: com.example.jooqreordlistener.JooqReordListenerApplication$$SpringCGLIB$$0
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:160) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: object is not an instance of declaring class
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 25 common frames omitted
+
+2023-12-10T17:58:02.088+09:00  INFO 55632 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : Starting JooqReordListenerApplicationKt using Java 17.0.7 with PID 55632 (/Users/yamagashin/Dev/jooqReordListener/build/classes/kotlin/main started by yamagashin in /Users/yamagashin/Dev/jooqReordListener)
+2023-12-10T17:58:02.090+09:00  INFO 55632 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : No active profile set, falling back to 1 default profile: "default"
+2023-12-10T17:58:02.118+09:00  INFO 55632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-12-10T17:58:02.118+09:00  INFO 55632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-12-10T17:58:02.671+09:00  INFO 55632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2023-12-10T17:58:02.676+09:00  INFO 55632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-10T17:58:02.676+09:00  INFO 55632 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2023-12-10T17:58:02.701+09:00  INFO 55632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-10T17:58:02.702+09:00  INFO 55632 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 584 ms
+2023-12-10T17:58:02.760+09:00  INFO 55632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-10T17:58:02.840+09:00  INFO 55632 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6dead4a3
+2023-12-10T17:58:02.840+09:00  INFO 55632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-10T17:58:02.898+09:00  INFO 55632 --- [restartedMain] liquibase.database                       : Set default schema name to public
+2023-12-10T17:58:03.007+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/20231210_create_order_table.sql
+2023-12-10T17:58:03.012+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/CallableSql.class
+2023-12-10T17:58:03.012+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/CallableSql.class/liquibase/sql/CallableSql.class is not a recognized file type
+2023-12-10T17:58:03.012+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/SingleLineComment.class
+2023-12-10T17:58:03.013+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/SingleLineComment.class/liquibase/sql/SingleLineComment.class is not a recognized file type
+2023-12-10T17:58:03.013+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/Sql.class
+2023-12-10T17:58:03.013+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/Sql.class/liquibase/sql/Sql.class is not a recognized file type
+2023-12-10T17:58:03.013+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/SqlConfiguration.class
+2023-12-10T17:58:03.013+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/SqlConfiguration.class/liquibase/sql/SqlConfiguration.class is not a recognized file type
+2023-12-10T17:58:03.013+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/UnparsedSql.class
+2023-12-10T17:58:03.013+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/UnparsedSql.class/liquibase/sql/UnparsedSql.class is not a recognized file type
+2023-12-10T17:58:03.013+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AbstractSqlVisitor$1.class
+2023-12-10T17:58:03.014+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AbstractSqlVisitor$1.class/liquibase/sql/visitor/AbstractSqlVisitor$1.class is not a recognized file type
+2023-12-10T17:58:03.014+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AbstractSqlVisitor.class
+2023-12-10T17:58:03.014+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AbstractSqlVisitor.class/liquibase/sql/visitor/AbstractSqlVisitor.class is not a recognized file type
+2023-12-10T17:58:03.014+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class
+2023-12-10T17:58:03.014+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class/liquibase/sql/visitor/AppendSqlIfNotPresentVisitor.class is not a recognized file type
+2023-12-10T17:58:03.014+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/AppendSqlVisitor.class
+2023-12-10T17:58:03.014+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/AppendSqlVisitor.class/liquibase/sql/visitor/AppendSqlVisitor.class is not a recognized file type
+2023-12-10T17:58:03.014+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/PrependSqlVisitor.class
+2023-12-10T17:58:03.014+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/PrependSqlVisitor.class/liquibase/sql/visitor/PrependSqlVisitor.class is not a recognized file type
+2023-12-10T17:58:03.015+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/RegExpReplaceSqlVisitor.class
+2023-12-10T17:58:03.015+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/RegExpReplaceSqlVisitor.class/liquibase/sql/visitor/RegExpReplaceSqlVisitor.class is not a recognized file type
+2023-12-10T17:58:03.015+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/ReplaceSqlVisitor.class
+2023-12-10T17:58:03.015+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/ReplaceSqlVisitor.class/liquibase/sql/visitor/ReplaceSqlVisitor.class is not a recognized file type
+2023-12-10T17:58:03.015+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/SqlVisitor.class
+2023-12-10T17:58:03.015+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/SqlVisitor.class/liquibase/sql/visitor/SqlVisitor.class is not a recognized file type
+2023-12-10T17:58:03.016+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading resource: liquibase/sql/visitor/SqlVisitorFactory.class
+2023-12-10T17:58:03.016+09:00  WARN 55632 --- [restartedMain] liquibase.changelog                      : included file liquibase/sql/visitor/SqlVisitorFactory.class/liquibase/sql/visitor/SqlVisitorFactory.class is not a recognized file type
+2023-12-10T17:58:03.050+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-10T17:58:03.072+09:00  INFO 55632 --- [restartedMain] liquibase.changelog                      : Reading from public.databasechangelog
+2023-12-10T17:58:03.082+09:00  INFO 55632 --- [restartedMain] liquibase.util                           : UPDATE SUMMARY
+2023-12-10T17:58:03.082+09:00  INFO 55632 --- [restartedMain] liquibase.util                           : Run:                          0
+2023-12-10T17:58:03.082+09:00  INFO 55632 --- [restartedMain] liquibase.util                           : Previously run:               1
+2023-12-10T17:58:03.083+09:00  INFO 55632 --- [restartedMain] liquibase.util                           : Filtered out:                 0
+2023-12-10T17:58:03.083+09:00  INFO 55632 --- [restartedMain] liquibase.util                           : -------------------------------
+2023-12-10T17:58:03.083+09:00  INFO 55632 --- [restartedMain] liquibase.util                           : Total change sets:            1
+2023-12-10T17:58:03.083+09:00  INFO 55632 --- [restartedMain] liquibase.util                           : Update summary generated
+2023-12-10T17:58:03.096+09:00  INFO 55632 --- [restartedMain] liquibase.lockservice                    : Successfully released change log lock
+2023-12-10T17:58:03.097+09:00  INFO 55632 --- [restartedMain] liquibase.command                        : Command execution complete
+2023-12-10T17:58:03.625+09:00  INFO 55632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-12-10T17:58:03.666+09:00  INFO 55632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2023-12-10T17:58:03.672+09:00  INFO 55632 --- [restartedMain] c.e.j.JooqReordListenerApplicationKt     : Started JooqReordListenerApplicationKt in 1.765 seconds (process running for 2.097)
